@@ -352,6 +352,7 @@
 "Assets/Scripts/GeneralEnemy.cs"
 "Assets/Scripts/Lazer.cs"
 "Assets/Scripts/Player.cs"
+"Assets/Scripts/PlayerBullet.cs"
 "Assets/Scripts/Spawner.cs"
 "Assets/Scripts/Timeout.cs"
 -langversion:9.0
