@@ -6,7 +6,7 @@ public class GeneralEnemy : MonoBehaviour {
     [SerializeField] private float HP;
     [SerializeField] private int movementSpeed;
     [SerializeField] private int turnSpeed;
-    [SerializeField] private GameObject player;
+    private GameObject player;
     [SerializeField] private GameObject deathParticle;
     private bool invicible = false;
     private void Die() {
@@ -16,7 +16,7 @@ public class GeneralEnemy : MonoBehaviour {
     }
     // Start is called before the first frame update
     void Start() {
-
+        player = GameObject.Find("/Player");
     }
 
     // Update is called once per frame
@@ -29,7 +29,7 @@ public class GeneralEnemy : MonoBehaviour {
     }
     void OnTriggerStay(Collider collision) {
         if (collision.gameObject.tag == "Lazer") {
-            HP -= 1 * Time.deltaTime;
+            HP -= 6 * Time.deltaTime;
             Vector3 direction = transform.position - player.transform.position;
             direction.Normalize();
             GetComponent<Rigidbody>().velocity += direction*2;

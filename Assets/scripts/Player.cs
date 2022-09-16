@@ -49,8 +49,14 @@ public class Player : MonoBehaviour {
             rb.velocity *= 0.5f;
             StartCoroutine(BulletSlowDown());
         }
+        if (Input.GetKeyDown("c")&&souls==2&&PlayerHealth!=3) {
+            souls = 0;
+            soulBar.value = souls;
+            PlayerHealth++;
+            healthBar.value = PlayerHealth;
+        }
         if (shooting) {
-            souls -= Time.deltaTime/3;
+            souls -= Time.deltaTime;
             if (souls < 0) {
                 souls = 0;
                 shooting = false;
