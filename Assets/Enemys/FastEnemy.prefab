@@ -217,6 +217,7 @@ MonoBehaviour:
   turnSpeed: 10
   anim: {fileID: 5711973811698663378}
   deathParticle: {fileID: 702118346757819551, guid: 521e1f41c000d9c43b296dff862ecc7f, type: 3}
+  score: 2
 --- !u!1001 &1034638793476589842
 PrefabInstance:
   m_ObjectHideFlags: 0

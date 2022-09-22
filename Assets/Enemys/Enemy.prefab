@@ -116,6 +116,8 @@ MonoBehaviour:
   HP: 1
   movementSpeed: 2
   turnSpeed: 1
+  knockBack: 1
+  score: 1
   deathParticle: {fileID: 702118346757819551, guid: 521e1f41c000d9c43b296dff862ecc7f, type: 3}
 --- !u!54 &8498204857036614327
 Rigidbody:

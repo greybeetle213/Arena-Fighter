@@ -9,11 +9,13 @@ public class FastEnemy : MonoBehaviour {
     private GameObject player;
     [SerializeField] private Animator anim;
     [SerializeField] private GameObject deathParticle;
+    [SerializeField] private int score;
     private bool invicible = false;
     private bool charging=false;
     private void Die() {
         Instantiate(deathParticle, transform.position, transform.rotation);
-        player.GetComponent<Player>().addSouls(0.4f);
+        player.GetComponent<Player>().addSouls(0.4f);   
+        player.GetComponent<Player>().addScore(score);
         Destroy(gameObject);
     }
     // Start is called before the first frame update

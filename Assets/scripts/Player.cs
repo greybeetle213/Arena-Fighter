@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Player : MonoBehaviour {
     // Start is called before the first frame update
@@ -13,6 +14,7 @@ public class Player : MonoBehaviour {
     [SerializeField] private Rigidbody rb;
     [SerializeField] private Slider healthBar;
     [SerializeField] private Slider soulBar;
+    [SerializeField] private TextMeshProUGUI scoreDisplay;
     Vector3 newSpeed;
     public float PlayerHealth;
     private float speed = 1;
@@ -22,6 +24,7 @@ public class Player : MonoBehaviour {
     private bool right = false;
     private bool shooting = false;
     private bool invicible = false;
+    private int score = 0;
     public float souls = 0;
     private Vector2 lookDir = new Vector2();
     
@@ -31,6 +34,10 @@ public class Player : MonoBehaviour {
             souls = 2;
         }
         soulBar.value = souls;
+    }
+    public void addScore(int ammount) {
+        score += ammount;
+        scoreDisplay.text = score.ToString();
     }
     void Start() {
 
@@ -123,7 +130,9 @@ public class Player : MonoBehaviour {
                 }
             }
         }
-        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(0f, Angle(lookDir), 0f), 10f * Time.deltaTime);
+        if (!shooting) {
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(0f, Angle(lookDir), 0f), 10f * Time.deltaTime);
+        }
     }
     public static float Angle(Vector2 vector2) {
         if (vector2.x < 0) {
