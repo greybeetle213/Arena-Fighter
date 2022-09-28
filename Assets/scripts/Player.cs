@@ -166,7 +166,7 @@ public class Player : MonoBehaviour {
         Instantiate(bloodParticle, pos, rot);
         healthBar.value -= 1;
         if (PlayerHealth <= 0) {
-            SceneManager.LoadScene("Arena");
+            SceneManager.LoadScene("StartScreen");
         }
     }
 }
