@@ -7,6 +7,7 @@ ScriptsOnlyBuild:
     - Lazer
     - Player
     - PlayerBullet
+    - SoundManeger
     - Spawner
     - Timeout
     Unity.Rider.Editor.dll:
@@ -21,8 +22,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -109,6 +112,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
     - Class: 91
@@ -148,7 +155,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 6420}
     - Class: 114
-      Script: {instanceID: 7918}
+      Script: {instanceID: 6966}
+    - Class: 114
+      Script: {instanceID: 7920}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -237,7 +246,13 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 21
       Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
     - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
@@ -380,7 +395,7 @@ ScriptsOnlyBuild:
     className: TMP_StyleSheet
   - hash:
       serializedVersion: 2
-      Hash: fea349dc37a6c5068428cbbe1488b377
+      Hash: 9d41c38b7d3f66facf12f8310d3c5ec0
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Player
@@ -1112,6 +1127,12 @@ ScriptsOnlyBuild:
     className: UnityOnCollisionExitMessageListener
   - hash:
       serializedVersion: 2
+      Hash: a21e5b71cc8213002c91d4652954719c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SoundManeger
+  - hash:
+      serializedVersion: 2
       Hash: e63944317d2f5958e31963668bb29158
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
@@ -1325,4 +1346,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/StartScreen.unity
   - Assets/Scenes/Arena.unity
   - Assets/Scenes/Help.unity
-  playerPath: C:/Users/bobsh/Arena Fighter/Build/Arena Fighter.exe
+  playerPath: C:/Users/bobsh/Documents/Arena Fighter Choices/Opt 3/Arena Fighter.exe

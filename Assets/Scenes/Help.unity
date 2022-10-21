@@ -426,16 +426,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'use arrow keys to move.
+  m_text: 'Use the arrow keys to move.
 
-    press z to shoot a bullet. when you kill
-    an enemy your score will increase and you will gain Souls (represented by the
+    Press Z to shoot a bullet. When you kill
+    an enemy your score will increase and you will gain souls (represented by the
     blue bar).
 
-    when an enemy tuches you you will loose heath (the red bar) when
-    that reaches zero you will die. Press C when you have a full soul bar to heal
-    one health point. Press X to shoot a powerfull lazer beam which will consume
-    you rsouls while active.'
+    When an enemy touches you you will loose heath (the red bar),
+    when that reaches zero you will die. Press C when you have a full soul bar to
+    heal one health point. Press X to shoot a powerfull lazer beam which will consume
+    your souls while active.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -738,12 +738,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.231
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96

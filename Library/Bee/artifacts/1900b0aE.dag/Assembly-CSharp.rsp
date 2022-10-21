@@ -355,6 +355,8 @@
 "Assets/Scripts/Lazer.cs"
 "Assets/Scripts/Player.cs"
 "Assets/Scripts/PlayerBullet.cs"
+"Assets/Scripts/ReadHighScore.cs"
+"Assets/Scripts/SoundManeger.cs"
 "Assets/Scripts/Spawner.cs"
 "Assets/Scripts/Timeout.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"

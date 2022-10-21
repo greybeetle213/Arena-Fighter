@@ -15,6 +15,10 @@ public class Player : MonoBehaviour {
     [SerializeField] private Slider healthBar;
     [SerializeField] private Slider soulBar;
     [SerializeField] private TextMeshProUGUI scoreDisplay;
+    [SerializeField] private GameObject playerModel;
+    public AudioSource audioSource;
+    public AudioClip shootSound;
+    public AudioSource lazerSound;
     Vector3 newSpeed;
     public float PlayerHealth;
     private float speed = 1;
@@ -47,6 +51,7 @@ public class Player : MonoBehaviour {
 
     void Update() {
         if (Input.GetKeyDown("z")) {
+            audioSource.PlayOneShot(shootSound, 1f);   
             GameObject bulletClone;
             bulletClone = Instantiate(bullet,bulletStartPos.transform.position,bulletStartPos.transform.rotation);
             Vector3 direction = bulletClone.transform.position - transform.position;
@@ -73,10 +78,12 @@ public class Player : MonoBehaviour {
         }
         if (Input.GetKeyDown("x") && souls > 0.1) {
             shooting = true;
+            lazerSound.Play();
             lazer.SetActive(true);
         }
         if (Input.GetKeyUp("x")) {
             shooting = false;
+            lazerSound.Pause();
             lazer.SetActive(false);
         }
         if (Input.GetKeyDown("left")) {
@@ -156,7 +163,12 @@ public class Player : MonoBehaviour {
         yield return new WaitForSeconds(0.1f);
         speed = 1;
     }
-
+    IEnumerator GameOver() {
+        PlayerPrefs.SetInt("Highscore", score);
+        playerModel.SetActive(false);
+        yield return new WaitForSeconds(3f);
+        SceneManager.LoadScene("StartScreen");
+    }
     private void TakeDamage(float damage, Collision source) {
         PlayerHealth -= damage;
         StartCoroutine(InvinicibilityFrames());
@@ -166,7 +178,7 @@ public class Player : MonoBehaviour {
         Instantiate(bloodParticle, pos, rot);
         healthBar.value -= 1;
         if (PlayerHealth <= 0) {
-            SceneManager.LoadScene("StartScreen");
+            StartCoroutine(GameOver());
         }
     }
 }

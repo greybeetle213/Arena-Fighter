@@ -10,7 +10,7 @@ EditorBuildSettings:
     guid: 9aeaa37dacf5d2e4a8aee6ff8d4e0c9a
   - enabled: 1
     path: Assets/Scenes/Arena.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    guid: 467635fce16661045ac3b55b9a45ee8a
   - enabled: 1
     path: Assets/Scenes/Help.unity
     guid: 5c1c5247a8d5b954a9ce66fe6afd7784

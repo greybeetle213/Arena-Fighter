@@ -114,7 +114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HP: 5
-  movementSpeed: 2
+  movementSpeed: 1
   turnSpeed: 0.2
   knockBack: 0.5
   score: 3

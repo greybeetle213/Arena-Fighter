@@ -14,7 +14,7 @@ public class Spawner : MonoBehaviour {
     }
     IEnumerator SpawnEnemys() {
         while (true) {
-            var SpawnQuantity = wave+4;
+            var SpawnQuantity = wave+1;
             for (int i = 0; i < Random.Range(0, SpawnQuantity / 2); i++) {
                 GameObject NewArmoredEnemy;
                 NewArmoredEnemy = Instantiate(ArmoredEnemy, transform.position, transform.rotation);
