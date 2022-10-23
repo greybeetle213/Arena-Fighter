@@ -7,6 +7,7 @@ ScriptsOnlyBuild:
     - Lazer
     - Player
     - PlayerBullet
+    - ReadHighScore
     - SoundManeger
     - Spawner
     - Timeout
@@ -22,10 +23,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -139,25 +138,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3418}
     - Class: 114
-      Script: {instanceID: 3854}
+      Script: {instanceID: 3856}
     - Class: 114
-      Script: {instanceID: 4870}
+      Script: {instanceID: 4872}
     - Class: 114
-      Script: {instanceID: 5216}
+      Script: {instanceID: 5218}
     - Class: 114
-      Script: {instanceID: 5308}
+      Script: {instanceID: 5310}
     - Class: 114
-      Script: {instanceID: 5404}
+      Script: {instanceID: 5406}
     - Class: 114
-      Script: {instanceID: 5920}
+      Script: {instanceID: 5922}
     - Class: 114
-      Script: {instanceID: 6076}
+      Script: {instanceID: 6078}
     - Class: 114
-      Script: {instanceID: 6420}
+      Script: {instanceID: 6422}
     - Class: 114
-      Script: {instanceID: 6966}
+      Script: {instanceID: 6968}
     - Class: 114
-      Script: {instanceID: 7920}
+      Script: {instanceID: 7922}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -212,15 +211,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3174}
     - Class: 114
-      Script: {instanceID: 5308}
+      Script: {instanceID: 5310}
     - Class: 114
-      Script: {instanceID: 5920}
+      Script: {instanceID: 5922}
     - Class: 114
-      Script: {instanceID: 6004}
+      Script: {instanceID: 6006}
     - Class: 114
-      Script: {instanceID: 6076}
+      Script: {instanceID: 6078}
     - Class: 114
-      Script: {instanceID: 6420}
+      Script: {instanceID: 6422}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -277,21 +276,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3174}
     - Class: 114
-      Script: {instanceID: 4144}
+      Script: {instanceID: 3818}
     - Class: 114
-      Script: {instanceID: 4258}
+      Script: {instanceID: 4146}
     - Class: 114
-      Script: {instanceID: 4528}
+      Script: {instanceID: 4260}
     - Class: 114
-      Script: {instanceID: 5308}
+      Script: {instanceID: 4530}
     - Class: 114
-      Script: {instanceID: 5920}
+      Script: {instanceID: 5310}
     - Class: 114
-      Script: {instanceID: 6004}
+      Script: {instanceID: 5922}
     - Class: 114
-      Script: {instanceID: 6076}
+      Script: {instanceID: 6006}
     - Class: 114
-      Script: {instanceID: 6420}
+      Script: {instanceID: 6078}
+    - Class: 114
+      Script: {instanceID: 6422}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -395,7 +396,7 @@ ScriptsOnlyBuild:
     className: TMP_StyleSheet
   - hash:
       serializedVersion: 2
-      Hash: 9d41c38b7d3f66facf12f8310d3c5ec0
+      Hash: 93cb8501c69edd8b5c8432bb81ab3370
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Player
@@ -675,6 +676,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Flow.dll
     namespaceName: Unity.VisualScripting
     className: ScriptGraphAsset
+  - hash:
+      serializedVersion: 2
+      Hash: bef05f8912c252960f2d77a3f2c70fc4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ReadHighScore
   - hash:
       serializedVersion: 2
       Hash: e63944317d2f5958e31963668bb29158
@@ -1346,4 +1353,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/StartScreen.unity
   - Assets/Scenes/Arena.unity
   - Assets/Scenes/Help.unity
-  playerPath: C:/Users/bobsh/Documents/Arena Fighter Choices/Opt 3/Arena Fighter.exe
+  playerPath: C:/Users/bobsh/Documents/Arena Fighter Choices/Final/Critter Pit.exe

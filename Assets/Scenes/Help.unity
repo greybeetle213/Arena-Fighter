@@ -432,9 +432,9 @@ MonoBehaviour:
     an enemy your score will increase and you will gain souls (represented by the
     blue bar).
 
-    When an enemy touches you you will loose heath (the red bar),
+    When an enemy touches you you will lose health (the red bar),
     when that reaches zero you will die. Press C when you have a full soul bar to
-    heal one health point. Press X to shoot a powerfull lazer beam which will consume
+    heal one health point. Press X to shoot a powerful laser beam which will consume
     your souls while active.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
